@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:weather_app/Activities/Home.dart';
+import 'package:weather_app/Activities/Loading.dart';
+
+void main() {
+  runApp(MaterialApp(
+    routes: {
+      "/" : (context) => Loading(),
+      "/home" : (context) => Home(),
+      "/loading": (context) => Loading(),
+    },
+  ));
+}
